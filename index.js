@@ -26,7 +26,7 @@ var keys = Object.keys(dict);
         console.log(image);
         console.log(dict["Stone"]);
         var block_name = (image+" "+dict[image]).toString();
-      client.channels.cache.get('791379091018350632').send(block_name);
+      client.channels.cache.get('791400004425482240').send(block_name);
     }); 
  }, null, true, 'America/Los_Angeles');
 job.start();
