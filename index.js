@@ -15,7 +15,6 @@ var dict = {
     Gravel: "https://static.wikia.nocookie.net/minecraft/images/c/cd/GravelNew.png/revision/latest?cb=20190903231442",
     Gold_Ore: "https://static.wikia.nocookie.net/minecraft/images/d/d4/GoldOreNew.png/revision/latest?cb=20190907224653",
     Iron_Ore: "https://static.wikia.nocookie.net/minecraft/images/5/50/IronOreNew.png/revision/latest?cb=20190907225306"
-
 };
 
 var keys = Object.keys(dict);  
