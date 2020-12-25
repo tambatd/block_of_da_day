@@ -18,7 +18,7 @@ var dict = {
 };
 
 var keys = Object.keys(dict);  
-  var job = new CronJob('10 0 0 * * *', function() {
+  var job = new CronJob('13 0 0 * * *', function() {
     client.login(process.env.TOKEN).then(() => {
       console.log("I am ready");
       let random = Math.floor(Math.random() * keys.length);
