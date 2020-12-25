@@ -25,11 +25,12 @@ var keys = Object.keys(dict);
         let image = keys[random].toString()
         console.log(image);
         x = image;
+        const channel = await client.channels.fetch('791400004425482240')
         y = dict[image];
         console.log(dict["Stone"]);
         var block_name = (x+" "+y).toString();
-console.log(client.channels.fetch('791400004425482240'));
-      client.channels.fetch('791400004425482240').send(block_name);
+        console.log(channel);
+        channel.send(block_name);
     }); 
  }, null, true, 'America/Los_Angeles');
 job.start();
