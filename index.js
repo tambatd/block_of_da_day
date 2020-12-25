@@ -18,7 +18,7 @@ var dict = {
 };
 
 var keys = Object.keys(dict);  
-  var job = new CronJob('24 0 * * *', function() {
+  var job = new CronJob('27 0 * * *', function() {
     client.login(process.env.TOKEN).then(() => {
       console.log("I am ready");
       let random = Math.floor(Math.random() * keys.length);
@@ -28,7 +28,7 @@ var keys = Object.keys(dict);
         y = dict[image];
         console.log(dict["Stone"]);
         var block_name = (x+" "+y).toString();
-      client.channels.cache.get('791400004425482240').send(x+" "+y);
+      client.channels.get('791400004425482240').send(x+" "+y);
     }); 
  }, null, true, 'America/Los_Angeles');
 job.start();
