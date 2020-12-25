@@ -29,7 +29,7 @@ let random = Math.floor(Math.random() * keys.length);
         y = dict[image];
         console.log(dict["Stone"]);
         var block_name = (x+" "+y).toString();
-async () => {
+client.once("ready", async () => {
   // Fetch the channel
   
         const channel = await client.channels.fetch('791400004425482240')
@@ -41,7 +41,7 @@ async () => {
   }
 
   channel.send(block_name);
-}
+})
 
     }); 
  }, null, true, 'America/Los_Angeles');
