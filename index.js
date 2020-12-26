@@ -41,9 +41,10 @@ client.once("ready", async () => {
   }
 
   channel.send(block_name);
-  client.destroy();
+  //client.destroy();
 })
-
+  //channel.send(block_name);
+client.destroy();
     }); 
  }, null, true, 'America/Los_Angeles');
 job.start();
