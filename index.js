@@ -18,7 +18,7 @@ var dict = {
 };
 
 var keys = Object.keys(dict);  
-  var job = new CronJob('14 12 * * *', function() {
+  var job = new CronJob('0 6 * * *', function() {
     client.login(process.env.TOKEN).then(() => {
       console.log("I am ready");
 
